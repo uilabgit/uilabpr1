@@ -1,0 +1,178 @@
+.portHeadBg img {
+    min-height: 100%;
+    min-width: 1024px;
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+}
+
+.portWrapper {
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    padding: 0;
+}
+
+section.portHeadView {
+    width: 100%;
+    position: relative;
+    height: 100vh;
+}
+
+.portNavContainer {
+    position: fixed;
+    margin: 0 auto;
+}
+
+.portDeskNav {
+    display: none;
+}
+
+.portMobNav {
+    display: block;
+}
+
+nav.portDeskNav {
+    float: right;
+    width: auto;
+    margin: 0 20px 0 0;
+}
+
+.portNavContainer {
+    position: fixed;
+    margin: 0 auto;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.portDeskNav ul {
+    overflow: hidden;
+}
+
+.portDeskNav li {
+    float: left;
+    margin: 10px;
+}
+
+.portDeskNav li a {
+    font-family: times new roman;
+    font-size: 18px;
+    color: #564747;
+    text-decoration: none;
+}
+
+.portMobNav {
+    float: right;
+    width: auto;
+    margin: 0 20px 0 0;
+}
+
+.portHam {
+    width: auto;
+    height: 50px;
+    overflow: hidden;
+    display: block;
+}
+
+.bar {
+    width: 40px;
+    background: #000;
+    height: 5px;
+    margin: 8px auto;
+}
+
+.portHam {
+    width: auto;
+    height: 50px;
+    overflow: hidden;
+    display: block;
+}
+
+.portMobNav ul {
+    height: 100%;
+    width: 0px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+    background: #141312;
+    background: -moz-linear-gradient(top, #141312 0%, #424242 100%);
+    background: -webkit-linear-gradient(top, #141312 0%, #424242 100%);
+    background: linear-gradient(to bottom, #141312 0%, #424242 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#141312', endColorstr='#424242', GradientType=0);
+}
+
+.portMobNav li {
+    text-align: center;
+    margin: 10px auto;
+    padding: 10px 0;
+}
+
+.portMobNav li a {
+    text-decoration: none;
+    color: #fff;
+    font-family: georgia;
+    font-size: 18px;
+}
+
+.portHeadQuotes {
+    position: absolute;
+    top: 33%;
+    width: 50%;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.portHeadQuotes h1,
+h2 {
+    font-size: 150px;
+    color: #fff;
+    font-family: georgia cursive;
+}
+
+.portHeadQuotes h2 {
+    margin-left: 50%;
+}
+
+
+/*************Media Queries****************************/
+
+@media only screen and (min-width:769px) and (max-width:960px) {
+    .portHeadQuotes h2 {
+        margin-left: 45%;
+    }
+}
+
+@media only screen and (min-width:768px) {
+    .portDeskNav {
+        display: block;
+    }
+    .portMobNav {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:767px) {
+    .portHeadQuotes {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        padding: 0;
+    }
+    .portHeadQuotes h2 {
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width:480px) {
+    .portHeadQuotes h1,
+    h2 {
+        font-size: 100px;
+    }
+}
